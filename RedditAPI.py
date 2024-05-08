@@ -5,8 +5,8 @@ import pandas as pd
 
 #change to user input
 baseURL = 'https://www.reddit.com'
-endpoint = '/r/Python/'
-category = 'hot'
+endpoint = '/r/' + input("Enter endpoint (eg. python/): ")
+category = input("Enter category (eg. hot/): ")
 
 url = baseURL + endpoint + category + ".json"
 afterPostID = None
