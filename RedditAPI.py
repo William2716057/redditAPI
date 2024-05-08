@@ -4,9 +4,9 @@ import httpx
 import pandas as pd
 
 #change to user input
-baseURL = ""
-endpoint = ''
-category = ''
+baseURL = 'https://www.reddit.com'
+endpoint = '/r/Python/'
+category = 'hot'
 
 url = baseURL + endpoint + category + ".json"
 afterPostID = None
